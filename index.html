@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="infra.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Holland Infrarood</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <img class="logo" src="img/logo.png" alt="logo">
+        </li>
+        <li>
+            <a class="links" href="index.html">HOME</a>
+        </li>
+        <li>
+            <a class="links"  href="HEATERS.html">HEATERS</a>
+        </li>
+        <li>
+            <a class="links"  href="PANELEN.html">PANELEN</a>
+        </li>
+        <li>
+            <a class="links" href="ACCESSOIRES.html">ACCESSOIRES</a>
+        </li>
+        <li>
+            <a class="links" href="MERKEN.html">MERKEN</a>
+        </li>
+        <li>
+            <a class="links" href="SERVICE.html">SERVICE</a>
+        </li>
+        <li>
+            <a class="links" href="CONTACT.html">CONTACT</a>
+        </li>
+        <li>
+            <a class="fa fa-check-circle" href="CHECK.html"></a>
+        </li>
+        <li>
+            <a class="fa fa-user-circle" href="USER.html"></a>
+        </li>
+        <li>
+            <a class="fa fa-shopping-cart" href="SHOP.html"></a>
+        </li>
+    </ul>
+</nav>
+<header>
+<div class="mySlides">
+    <img class="w3-animate-opacity" src="img/infrarood-heaters-1600764834.jpg" alt="heaters">
+<div class="headerText">
+    <h1>INFRAROOD HEATERS</h1>
+    <p>KRACHTIG EN DIRECT WARM</p>
+    <a href="meerweten.html" class="meerweten">MEER WETEN</a>
+</div>
+</div>
+    <div class="mySlides">
+        <img class="w3-animate-opacity" src="img/infrarood-panelen-1600764733.jpg" alt="panelen">
+    <div class="headerText">
+        <h1>INFRAROOD PANELEN</h1>
+        <p>BETAALBAAR EN UITERST EFFECTIEF</p>
+        <a href="meerweten.html" class="meerweten">MEER WETEN</a>
+        </div>
+    </div>
+    <div class="mySlides">
+        <img class="w3-animate-opacity" src="img/accessoires-1600764069.png" alt="accessiores">
+    <div class="headerText">
+        <h1>ACCESSOIRES</h1>
+        <p>COMFORTABEL WONEN</p>
+        <a href="meerweten.html" class="meerweten">MEER WETEN</a>
+    </div>
+    </div>
+    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095</button>
+</header>
+<section>
+    <ul class="redBar">
+        <li>
+            <i class="fa fa-truck"></i>
+            <p>GRATIS VERZENDING<br> V.A. € 30,-</p>
+        </li>
+        <li>
+            <i class="fa fa-history"></i>
+            <p>SNELE<br>LEVERING</p>
+        </li>
+        <li>
+            <i class="fa fa-check"></i>
+            <p>TEVREDEN<br>KLANTEN</p>
+        </li>
+        <li>
+            <i class="fa fa-comments"></i>
+            <p>PERSOONLIJK ADVIES<br> OP MAAT</p>
+        </li>
+    </ul>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<footer>
+</footer>
+</body>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 10000);
+    }
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+
+</script>
+</html>

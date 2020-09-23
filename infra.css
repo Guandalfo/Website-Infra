@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+nav{
+    position:absolute;
+    z-index:4;
+    width:100%;
+    box-sizing:border-box;
+}
+nav ul{
+    background-color:white;
+    opacity:80%;
+    overflow:hidden;
+    list-style-type:none;
+    text-align:center;
+}
+nav li{
+    display:inline;
+
+}
+nav a.links{
+    text-decoration:none;
+    padding-left:15px;
+    padding-right:15px;
+    font-family:"Open Sans", sans-serif;
+    font-size:14px;
+    color:black;
+    display:inline-block;
+}
+nav a.links:hover{
+    color:#E30613;
+    text-decoration-line:underline;
+    text-decoration-color:#E30613;
+}
+nav img.logo{
+    padding-top:10px;
+    padding-bottom:10px;
+    vertical-align:middle;
+    height:70px;
+    width:270px;
+    padding-right:90px;
+    display:inline-block;
+}
+a.fa{
+    padding:7px;
+    font-size:20px;
+    color:black;
+    text-decoration:none;
+    display:inline-block;
+}
+a.fa:hover {
+    color: #E30613;
+}
+.fa.fa-check-circle{
+    padding-left:70px;
+}
+body{
+    background-color:white;
+    margin:0 auto;
+}
+.mySlides{
+    z-index:-1;
+    width:100%;
+    display:none;
+}
+.w3-animate-opacity{
+    width:100%;
+    margin:0 auto;
+}
+.headerText{
+    height:220px;
+    font-family:"Open Sans", sans-serif;
+    z-index:3;
+    position:absolute;
+    top:150px;
+    animation: mymove 1s ease-in-out 0s forwards;
+    background-color:white;
+    opacity:85%;
+    border:white solid 30px;
+    border-radius:10px;
+    box-sizing:border-box;
+
+}
+.headerText p{
+    color:black;
+    font-size:16px;
+    padding-bottom:35px;
+}
+.headerText h1{
+    margin:0;
+    font-size:35px;
+    color:black;
+}
+.headerText a{
+    color:white;
+    background-color:#E30613;
+    border:#E30613 solid 10px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:16px;
+    width:200px;
+    margin:0 auto;
+}
+.headerText a:hover{
+    text-decoration-line:underline;
+    text-decoration-color:white;
+}
+@keyframes mymove {
+    from {left: -360px;}
+    to {left: 200px;}
+}
+header{
+    position:relative;
+}
+ul.redBar{
+    background-color:#E30613;
+    width:100%;
+    text-align:center;
+    overflow:hidden;
+    padding:5px;
+    box-sizing:border-box;
+}
+ul.redBar li{
+    display:inline;
+}
+ul.redBar i{
+    padding-left:80px;
+    padding-right:10px;
+    font-size:40px;
+    display:inline-block;
+    color:white;
+}
+ul.redBar p{
+    text-align:left;
+    display:inline-block;
+    font-size:14px;
+    color:white;
+    font-family:"Open Sans", sans-serif
+}

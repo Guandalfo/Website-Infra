@@ -68,6 +68,7 @@ body{
     width:100%;
     margin:0 auto;
 }
+
 .headerText{
     background-size:contain;
     font-family:"Open Sans", sans-serif;
@@ -142,13 +143,34 @@ ul.redBar p{
     font-family:"Open Sans", sans-serif
 }
 .slider {
-    width: 900px;
+    width:1100px;
     margin: 20px auto;
-    text-align: center;
-    padding: 20px;
+    padding-top:40px;
     color: white;
 }
 .item{
-    padding-right:20px;
+    background-color:lightgray;
+    height:390px;
+    width:30%;
+    margin-left:10px;
+    padding-left:70px;
+    border:white solid 10px;
+}
+.item h1{
+    font-size:23px;
+    color:black;
+}
+.item p{
+    color:black;
+}
+.item img{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.fa-burn{
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:180px;
+    color:#E30613;
     padding-left:20px;
 }

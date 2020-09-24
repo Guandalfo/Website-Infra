@@ -37,14 +37,14 @@ nav img.logo{
     padding-top:10px;
     padding-bottom:10px;
     vertical-align:middle;
-    height:70px;
-    width:270px;
-    padding-right:90px;
+    height:88px;
+    width:330px;
+    padding-right:70px;
     display:inline-block;
 }
 a.fa{
     padding:7px;
-    font-size:20px;
+    font-size:24px;
     color:black;
     text-decoration:none;
     display:inline-block;
@@ -69,11 +69,13 @@ body{
     margin:0 auto;
 }
 .headerText{
-    height:220px;
+    background-size:contain;
     font-family:"Open Sans", sans-serif;
     z-index:3;
+    top:37%;
     position:absolute;
-    top:150px;
+    width:auto;
+    height:auto;
     animation: mymove 1s ease-in-out 0s forwards;
     background-color:white;
     opacity:85%;
@@ -89,8 +91,9 @@ body{
 }
 .headerText h1{
     margin:0;
-    font-size:35px;
+    font-size:39px;
     color:black;
+    padding-bottom:10px;
 }
 .headerText a{
     color:white;
@@ -98,9 +101,8 @@ body{
     border:#E30613 solid 10px;
     border-radius:10px;
     text-decoration:none;
-    font-size:16px;
+    font-size:18px;
     width:200px;
-    margin:0 auto;
 }
 .headerText a:hover{
     text-decoration-line:underline;
@@ -108,7 +110,7 @@ body{
 }
 @keyframes mymove {
     from {left: -360px;}
-    to {left: 200px;}
+    to {left:14%;}
 }
 header{
     position:relative;
@@ -123,9 +125,10 @@ ul.redBar{
 }
 ul.redBar li{
     display:inline;
+    padding-right:50px;
 }
 ul.redBar i{
-    padding-left:80px;
+    padding-left:10px;
     padding-right:10px;
     font-size:40px;
     display:inline-block;
@@ -137,4 +140,15 @@ ul.redBar p{
     font-size:14px;
     color:white;
     font-family:"Open Sans", sans-serif
+}
+.slider {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.item{
+    padding-right:20px;
+    padding-left:20px;
 }

@@ -4,14 +4,14 @@
 }
 nav{
     position: fixed;
-    z-index:2;
+    z-index:3;
     width:100%;
     box-sizing:border-box;
 }
 .nav.scrolled {
+    z-index:4;
     background-color: white;
     opacity:100%;
-    transition: background-color 200ms linear;
     box-shadow: 5px 10px 10px rgba(0,0,0,.2);
 }
 .nav{
@@ -76,9 +76,8 @@ body{
 }
 
 .headerText{
-    background-size:contain;
     font-family:"Open Sans", sans-serif;
-    z-index:3;
+    z-index:0;
     top:37%;
     position:absolute;
     width:auto;
@@ -95,14 +94,17 @@ body{
     color:black;
     font-size:16px;
     padding-bottom:35px;
+    z-index:0;
 }
 .headerText h1{
     margin:0;
+    z-index:0;
     font-size:39px;
     color:black;
     padding-bottom:10px;
 }
 .headerText a{
+    z-index:0;
     color:white;
     background-color:#E30613;
     border:#E30613 solid 10px;

@@ -14,7 +14,7 @@
 </head>
 <body>
 <nav>
-    <ul>
+    <ul class="nav">
         <li>
             <a class="logo" href="index.html">
             <img src="img/logo.png" alt="logo">
@@ -54,7 +54,7 @@
 </nav>
 <header>
 <div class="mySlides">
-    <img class="w3-animate-opacity" src="img/infrarood-heaters-1600764834.jpg" alt="heaters">
+    <img class="slide" src="img/infrarood-heaters-1600764834.jpg" alt="heaters">
 <div class="headerText">
     <h1>INFRAROOD HEATERS</h1>
     <p>KRACHTIG EN DIRECT WARM</p>
@@ -62,7 +62,7 @@
 </div>
 </div>
     <div class="mySlides">
-        <img class="w3-animate-opacity" src="img/infrarood-panelen-1600764733.jpg" alt="panelen">
+        <img class="slide" src="img/infrarood-panelen-1600764733.jpg" alt="panelen">
     <div class="headerText">
         <h1>INFRAROOD PANELEN</h1>
         <p>BETAALBAAR EN UITERST EFFECTIEF</p>
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div class="mySlides">
-        <img class="w3-animate-opacity" src="img/accessoires-1600764069.png" alt="accessiores">
+        <img class="slide" src="img/accessoires-1600764069.png" alt="accessiores">
     <div class="headerText">
         <h1>ACCESSOIRES</h1>
         <p>COMFORTABEL WONEN</p>
@@ -120,7 +120,18 @@
         <i class="fa fa-shopping-cart"></i>
     </a>
 </section>
-<section>
+<section class="selectie">
+    <div class="row-container">
+        <span class="h1">ONZE SELECTIE</span>
+        <span class="first">ALLES</span>
+        <span class="middle">NIEUWSTE</span>
+        <span class="last">MEEST VERKOCHT</span>
+    </div>
+    <div class="search-container">
+        <span>Voor al onze producten geldt: Vóór 16:00 uur besteld, na 2 werkdagen in huis!</span>
+        <input type="text" placeholder="Zoek..">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
 </section>
 <section>
 </section>
@@ -147,6 +158,14 @@
     </script>
 </body>
     <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".nav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+
     var myIndex = 0;
     carousel();
 
@@ -155,11 +174,15 @@
         var x = document.getElementsByClassName("mySlides");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
+
         }
         myIndex++;
         if (myIndex > x.length) {myIndex = 1}
+        $(x[myIndex-1]).fadeIn(1500);
         x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 10000);
+        setTimeout(carousel,
+            10000
+        );
     }
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -176,6 +199,7 @@
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
+        $(x[slideIndex-1]).fadeIn(1500);
         x[slideIndex-1].style.display = "block";
     }
 </script>

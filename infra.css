@@ -4,7 +4,7 @@
 }
 nav{
     position: fixed;
-    z-index:4;
+    z-index:2;
     width:100%;
     box-sizing:border-box;
 }
@@ -123,6 +123,7 @@ header{
     position:relative;
 }
 ul.redBar{
+    z-index:1;
     background-color:#E30613;
     width:100%;
     text-align:center;
@@ -149,6 +150,7 @@ ul.redBar p{
     font-family:"Open Sans", sans-serif
 }
 .slider {
+    z-index:1;
     width:900px;
     margin: 20px auto;
     padding-top:60px;
@@ -170,6 +172,7 @@ ul.redBar p{
     color:black;
 }
 .item p{
+    font-weight:500;
     font-family:"Open Sans", sans-serif;
     color:black;
     text-align:center;
@@ -199,37 +202,192 @@ ul.redBar p{
     background-color:#EEEEEE;
     margin-top:85px;
     padding-top:70px;
-    position:absolute;
+    position:relative;
     width:100%;
+    height:850px;
     box-sizing:border-box;
     text-align:center;
-}
-.row, .selectie h1{
-    float:left;
-    display:inline;
-    text-align:center;
+    z-index:1;
 }
 .row-container .h1{
-    padding-right:320px;
+    font-weight:600;
+    padding-right:350px;
     font-size:25px;
     color:black;
     font-family:"Open Sans", sans-serif;
 }
 .row-container{
+    font-family:"Open Sans", sans-serif;
     padding-top:10px;
 }
+.first:hover{
+    text-decoration-line:underline;
+}
 .first{
+    text-decoration:none;
     font-size:15px;
-
 }
 .last{
+    text-decoration:none;
     font-size:15px;
 }
+.last:hover{
+    text-decoration-line:underline;
+}
 .middle{
+    text-decoration:none;
     font-size:15px;
     padding-left:35px;
     padding-right:35px;
 }
+.middle:hover{
+    text-decoration-line:underline;
+}
 .search-container{
-    padding-top:100px;
+    font-family:"Open Sans", sans-serif;
+    padding-top:60px;
+    font-size:17px;
+}
+.search-container span{
+    padding-right:50px;
+}
+.search-container input{
+    padding-left:15px;
+    background-color:white;
+    border:1px solid darkgray;
+    border-radius:15px 0 0 15px;
+}
+.search-container button{
+    color:darkgray;
+    background-color:white;
+    border-radius: 0 15px 15px 0;
+    border:1px solid darkgray;
+    cursor:pointer;
+}
+.selectie ul{
+    width:100%;
+    overflow:hidden;
+    padding-top:70px;
+    box-sizing:border-box;
+    text-align:center;
+    margin-bottom:70px;
+}
+.selectie li{
+    margin-left:20px;
+    margin-right:20px;
+    background-color:white;
+    text-align:left;
+    display:inline;
+    width:250px;
+    height:410px;
+    border-radius:2px;
+}
+.selectie li h1{
+    font-size:20px;
+    padding-left:10px;
+    font-weight:700;
+    font-family:"Open Sans", sans-serif;
+}
+.selectie li img{
+    width:250px;
+}
+.selectie li a{
+    text-decoration:none;
+}
+.selectie li p{
+    padding-left:10px;
+    font-size:14px;
+    font-family:"Open Sans", sans-serif;
+}
+.selectie li h2{
+    padding-left:10px;
+    font-size:19px;
+    font-weight:600;
+    font-family:"Open Sans", sans-serif;
+}
+li.eerste,li.tweede,li.derde,li.vierde{
+    display:inline-block;
+}
+li.eerste:hover{
+    box-shadow:0  0 20px rgba(0,0,0,.2);
+}
+li.tweede:hover{
+    box-shadow:0  0 20px rgba(0,0,0,.2);
+}
+li.derde:hover{
+    box-shadow:0  0 20px rgba(0,0,0,.2);
+}
+li.vierde:hover{
+    box-shadow:0  0 20px rgba(0,0,0,.2);
+}
+.verder{
+    text-decoration:none;
+    margin-top:20px;
+}
+.verder:hover{
+    text-decoration:underline;
+}
+.voordelen p{
+    padding:10px;
+    width:370px;
+    font-size:17px;
+    text-align:left;
+    display:inline-block;
+    font-family:"Open Sans", sans-serif;
+}
+.voordelen img{
+    z-index:-1;
+    position:absolute;
+    margin-top:180px;
+    width:500px;
+    height:250px;
+    opacity:50%;
+}
+.voordelen h1{
+    margin-top:70px;
+    font-size:24px;
+    font-weight:600;
+    font-family:"Open Sans", sans-serif;
+}
+.text{
+    width:100%;
+    margin-bottom:60px;
+    box-sizing:border-box;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+.redbar-twee ul{
+    padding:5px;
+    z-index:1;
+    display:inline;
+    text-align:center;
+    width:100%;
+    position:absolute;
+    box-sizing:border-box;
+    background-color:#E30613;
+    margin-bottom:30px;
+}
+.redbar-twee li{
+    display:inline;
+    list-style-type:none;
+}
+.redbar-twee h1{
+    font-size:20px;
+    padding-right:20px;
+    font-weight:600;
+    font-family:"Open Sans", sans-serif;
+}
+.redbar-twee i, .redbar-twee h1{
+    display:inline-block;
+    color:white;
+}
+.redbar-twee i{
+    border:white solid 3px;
+    border-radius:10px;
+    padding-left:7px;
+    padding-right:7px;
+    font-size:30px;
+    cursor:pointer;
 }

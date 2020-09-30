@@ -72,17 +72,17 @@ body{
 }
 .slide{
     width:100%;
-    margin:0 auto;
+    position:relative;
 }
-
 .headerText{
+    animation: mymove 1.5s ease-in-out  forwards;
+    left:14%;
     font-family:"Open Sans", sans-serif;
     z-index:0;
     top:37%;
     position:absolute;
     width:auto;
     height:auto;
-    animation: mymove 1s ease-in-out 0s forwards;
     background-color:white;
     opacity:85%;
     border:white solid 30px;
@@ -103,7 +103,7 @@ body{
     color:black;
     padding-bottom:10px;
 }
-.headerText a{
+.headerText .meerweten{
     z-index:0;
     color:white;
     background-color:#E30613;
@@ -125,7 +125,8 @@ header{
     position:relative;
 }
 ul.redBar{
-    z-index:1;
+    margin:0 auto;
+    z-index:2;
     background-color:#E30613;
     width:100%;
     text-align:center;
@@ -369,9 +370,9 @@ li.vierde:hover{
     position:absolute;
     box-sizing:border-box;
     background-color:#E30613;
-    margin-bottom:30px;
 }
 .redbar-twee li{
+    padding-left:3px;
     display:inline;
     list-style-type:none;
 }
@@ -386,10 +387,151 @@ li.vierde:hover{
     color:white;
 }
 .redbar-twee i{
+    color:#E30613;
+    background-color:white;
     border:white solid 3px;
-    border-radius:10px;
-    padding-left:7px;
-    padding-right:7px;
-    font-size:30px;
+    border-radius:15px;
+    padding:5px;
+    font-size:21px;
     cursor:pointer;
 }
+
+.last{
+    padding-bottom:100px;
+    z-index:1;
+    height:auto;
+    text-align:center;
+    width:100%;
+    position:relative;
+}
+.last .info{
+    vertical-align:top;
+    position:relative;
+    height:300px;
+    width:650px;
+    display:inline-block;
+}
+ .last .contact{
+     vertical-align:top;
+    position:relative;
+    height:300px;
+    width:360px;
+    display:inline-block;
+}
+ .last .nieuwsbrief{
+     vertical-align:top;
+    position:relative;
+    height:300px;
+    display:inline-block;
+    width:360px;
+    padding-right:55px;
+     text-align:left;
+}
+.info h1{
+    padding-top:100px;
+    text-align:left;
+    color:black;
+    font-family:"Open Sans", sans-serif;
+    font-size:23px;
+    font-weight:600;
+    padding-left:55px;
+}
+.contact h1{
+    padding-top:100px;
+    text-align:left;
+    color:black;
+    font-family:"Open Sans", sans-serif;
+    font-size:23px;
+    font-weight:600;
+}
+.nieuwsbrief h1{
+    padding-top:100px;
+    text-align:left;
+    color:black;
+    font-family:"Open Sans", sans-serif;
+    font-size:23px;
+    font-weight:600;
+}
+.lijsten{
+    padding:0;
+     margin:0;
+    display:inline;
+}
+.lijsten li{
+    padding-top:40px;
+    display:inline-block;
+    padding-right:50px;
+}
+.info a:hover{
+    text-decoration-line:underline;
+}
+.lijsten li a{
+    text-align:left;
+    display:block;
+    font-size:17px;
+    font-family:"Open Sans", sans-serif;
+    text-decoration:none;
+    padding-bottom:10px;
+}
+.contact p{
+    font-size:17px;
+    padding-bottom:10px;
+    font-family:"Open Sans", sans-serif;
+    text-align:left;
+}
+.box{
+    padding-top:35px;
+}
+.nieuwsbrief p{
+    padding-top:35px;
+    font-size:17px;
+    padding-bottom:10px;
+    font-family:"Open Sans", sans-serif;
+    text-align:left;
+}
+.nieuwsbrief input{
+    margin-top:15px;
+    border:darkgray solid 1px;
+    border-radius:20px;
+    padding-left:5px;
+    margin-bottom:10px;
+}
+.nieuwsbrief a{
+    text-decoration:none;
+    padding-left:130px;
+    font-size:17px;
+    font-family:"Open Sans", sans-serif;
+    text-align:right;
+}
+.nieuwsbrief a:hover{
+    text-decoration:underline;
+}
+footer{
+    border-top:#EEEEEE solid 1px;
+    z-index:2;
+    margin-top:50px;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.einde{
+    padding-right:50px;
+    z-index:1;
+    width:100%;
+    margin-bottom:0;
+    display:inline;
+    text-align:center;
+}
+.einde li{
+    display:inline;
+}
+.einde p{
+    padding-left:10px;
+    padding-right:10px;
+    font-family:"Open Sans", sans-serif;
+    font-size:17px;
+    display:inline-block;
+}
+

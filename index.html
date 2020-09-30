@@ -53,7 +53,7 @@
     </ul>
 </nav>
 <header>
-<div class="mySlides">
+    <div class="mySlides">
     <img class="slide" src="img/infrarood-heaters-1600764834.jpg" alt="heaters">
 <div class="headerText">
     <h1>INFRAROOD HEATERS</h1>
@@ -67,8 +67,8 @@
         <h1>INFRAROOD PANELEN</h1>
         <p>BETAALBAAR EN UITERST EFFECTIEF</p>
         <a href="meerweten.html" class="meerweten">MEER WETEN</a>
-        </div>
     </div>
+        </div>
     <div class="mySlides">
         <img class="slide" src="img/accessoires-1600764069.png" alt="accessiores">
     <div class="headerText">
@@ -202,22 +202,91 @@
         </li>
     </ul>
 </section>
+<section class="last">
+        <div class="info">
+        <h1>EXTRA INFORMATIE</h1>
+        <ul class="lijsten">
+            <li>
+                <a href="SHOP.html">Heaters</a>
+
+                <a href="SHOP.html">Panelen</a>
+
+                <a href="SHOP.html">Accessoires</a>
+
+                <a href="SHOP.html">Infrarood Spiegels</a>
+            </li>
+            <li>
+                <a href="SHOP.html">Glazen Panelen</a>
+
+                <a href="SHOP.html">Hybride Panelen</a>
+
+                <a href="SHOP.html">Terras Heaters</a>
+
+                <a href="SHOP.html">Parasol Heaters</a>
+            </li>
+            <li>
+                <a href="SHOP.html">Thermostaten</a>
+
+                <a href="SHOP.html">Dimmers</a>
+
+
+                <a href="SHOP.html">Aan/Uit Timers</a>
+                <br />
+
+            </li>
+        </ul>
+        </div>
+    <div class="contact">
+        <h1>CONTACT INFORMATIE</h1>
+        <div class="box">
+        <p>Zaadmarkt 7</p>
+        <p>1681 PD Zwaagdijk - Oost</p>
+        <p>Nederland</p>
+        <p><strong>T</strong> 0228 - 51 22 33 (algemeen)</p>
+        <p><strong>T</strong> 0228 - 51 22 33 (verkoop)</p>
+        <p><strong>E</strong> info@infraroodheatersenpanelen.nl</p>
+        </div>
+    </div>
+    <div class="nieuwsbrief">
+        <h1>NIEUWSBRIEF</h1>
+        <p>Bent u nieuwsgierig naar de laatste acties en wilt u op de hoogte blijven?
+            Meld u dan aan voor onze nieuwsbrief.</p>
+        <input type="text" placeholder="Uw e-mailadres"><a href="SHOP.html">Verstuur ></a>
+    </div>
+</section>
 <footer>
+<ul class="einde">
+    <li>
+        <p>© infraroodheatersenpanelen.nl 2020</p>
+        <p>|</p>
+    </li>
+    <li>
+        Alle rechten voorbehouden
+        <p>|</p>
+    </li>
+    <li>
+        <p> Disclaimer </p>
+    </li>
+    <li>
+        <p>|</p>
+        <p>Sitemap</p>
+    </li>
+</ul>
 </footer>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
-    window.onload=function(){
+    window.onload=function() {
         $('.slider').slick({
-            autoplay:true,
-            autoplaySpeed:2000,
-            arrows:true,
-            prevArrow:false,
-            nextArrow:false,
-            centerMode:true,
-            slidesToShow:2,
-            slidesToScroll:3
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            prevArrow: false,
+            nextArrow: false,
+            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 3
         });
     };
     </script>
@@ -231,41 +300,42 @@
         });
 
 
-    var myIndex = 0;
-    carousel();
+        var myIndex = 0;
+        carousel();
 
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
 
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            $(x[myIndex-1]).fadeIn(1500);
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel,
+                10000
+            );
         }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        $(x[myIndex-1]).fadeIn(1500);
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel,
-            10000
-        );
-    }
-    var slideIndex = 1;
-    showDivs(slideIndex);
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
         }
-        $(x[slideIndex-1]).fadeIn(1500);
-        x[slideIndex-1].style.display = "block";
-    }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            $(x[slideIndex-1]).fadeIn(1500);
+            x[slideIndex-1].style.display = "block";
+        }
+
 </script>
 </html>
